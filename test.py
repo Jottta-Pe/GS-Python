@@ -1,9 +1,12 @@
 import csv
+from pprint import pprint
 
 dados = []
+arquivo = "Book1.csv"
+arquivo = "teste1.csv"
 
-with open("Book1.csv", newliw ='', encoding='utf-8') as f:
-    leitor = csv.reder(f)
+with open(arquivo, newline ='', encoding='utf-8') as f:
+    leitor = csv.reader(f)
     for linha in leitor:
         dados.append(linha)
-print(dados)
+pprint(dados)
